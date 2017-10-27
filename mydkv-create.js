@@ -1,3 +1,5 @@
+//The is called when we are trying to create a new KV Pair
+
 'use strict';
 
 const AWS = require('aws-sdk');
@@ -10,6 +12,7 @@ module.exports = (event, callback) => {
   data.id = uuid.v1();
   data.updatedAt = new Date().getTime();
 
+  //Collecting the params that will be passed to the DynamoDB to insert into the table.
   const params = {
     TableName: 'MyDKV',
     Item: data

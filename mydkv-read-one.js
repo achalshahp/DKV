@@ -1,3 +1,5 @@
+//The is called when we are trying to read just one KV Pair
+
 'use strict';
 
 const AWS = require('aws-sdk');
