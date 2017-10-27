@@ -5,7 +5,7 @@ const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
 module.exports = (event, callback) => {
   const params = {
-    TableName : 'DKV',
+    TableName : 'MyDKV',
     Key: {
       id: event.pathParameters.id
     }

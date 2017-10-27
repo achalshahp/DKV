@@ -90,7 +90,7 @@ resources:
         ProvisionedThroughput:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
-        TableName: 'DKV'
+        TableName: 'MyDKV'
 
 # you can overwrite defaults here
 #  stage: dev

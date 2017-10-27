@@ -11,7 +11,7 @@ module.exports = (event, callback) => {
   data.updatedAt = new Date().getTime();
 
   const params = {
-    TableName: 'DKV',
+    TableName: 'MyDKV',
     Item: data
   };
 
